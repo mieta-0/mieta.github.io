@@ -15,7 +15,7 @@
 
     body {
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #ebd1ff 0%, #8651bb 100%);
+      background: linear-gradient(135deg, #e4c0ff 0%, #7841af 100%);
       color: white;
       display: flex;
       justify-content: center;
@@ -33,21 +33,49 @@
       object-fit: cover;
     }
 
-    h1 {
+    h1{
+      font-size: 45px;
+    }
+    h3{
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+    h2 {
       font-size: 24px;
       margin-bottom: 10px;
     }
 
-    p {
+    p{
       font-size: 14px;
       margin-bottom: 2px;
+      margin-left: 15px;
+    }
+    h4{
+      margin-top: -15px;
+      margin-bottom: 2px;
+      margin-left: 15px;
     }
 
     .links {
       display: flex;
       flex-direction: column;
       gap: 10px;
-      margin-top: 70px;
+      align-items: center;
+    }
+
+    .sosial{
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .sosial1{
+      display: flex;
+      flex-direction:row;
+      gap: 15px;
+      flex-wrap:wrap;
+      margin-left: 60px;
     }
 
     .links h3 {
@@ -55,17 +83,13 @@
       font-size: 18px;
     }
 
-    .btn {
-      background: white;
-      padding: 12px;
-      border-radius: 10px;
-      font-weight: 600;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
+    .logo{
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 0px solid white;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      border: 5px solid white;
     }
 
     .btn:hover {
@@ -74,7 +98,7 @@
 
     .text{
       text-decoration: none;
-      color: #764ba2;
+      color: #8631db;
     }
     
     .footer {
@@ -82,47 +106,95 @@
       font-size: 12px;
       opacity: 0.7;
     }
+
+    .item-link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      transition: transform 0.2s; 
+      margin-right: 50px;
+    }
+
+    .item-link:hover {
+      transform: scale(1.1); 
+    }
+
+    .text {
+      margin-top: 8px;
+      font-size: 14px;
+      color: white; 
+    }
+
+    a{
+      font-size: 13px;
+    }
+  
+    .profilSet{
+      display: flex;
+      justify-content: space-between;
+      align-items: center; 
+      width: 100%;
+      margin-bottom: 20px
+    }
   </style>
 </head>
 
 <body>
 
   <div class="container">
-    <img src="profil.png" alt="Profile" class="profile-img">
+    <div class="profilSet">
+      <h1>MIETA</h1>
+      <img src="profil.png" alt="Profile" class="profile-img">
+    </div>
 
-    <h1>Halo semuanya! perkenalkan, aku Mieta! </h1>
+    <hr size="5" color="#8631db">
+    <h3>ABOUT ME :</h3>
+    <h4>Halo semuanya! perkenalkan, aku Mieta! </h4>
     <p>Aku seorang VTuber indie, yang streaming bermain game!🎮 Salam kenal ya semua👾</p>
     <p>Jangan lupa kunjungi chanel aku (^._.^)ﾉ </p>
 
+    <h3>CHANNEL :</h3>
     <div class="links">
-      <h3>CHANEL :</h3>
-      <li style="list-style: none" class="btn" >
-            <img  width="30" height="30" src="https://yt3.googleusercontent.com/sT8F3gr_Km9eFJuJmeAwI4WYgWoyvub_xqWsJzPaAdPf2j7CkL-UWKPhBdsEgPbT4h29TYxErPU=s900-c-k-c0x00ffffff-no-rj">
-            <a href="https://youtube.com/@mieta001" target="_blank" class="text">YouTube</a></li>
+      <div class="sosial">
+        <a href="https://youtube.com/@mieta001" target="_blank" class="item-link">
+          <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2nVOAu8QEkbUyojssNV-49dGeipjA42lxbA&s">
+          <span class="text"><b>YouTube</b></span>
+        </a>
 
-      <li style="list-style: none" class="btn" >
-            <img  width="30" height="30" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1280px-Instagram_logo_2022.svg.png">
-            <a href="https://www.instagram.com/mie_ta4" target="_blank" class="text">Instagram</a></li>
+        <a href="https://www.instagram.com/mie_ta4" target="_blank" class="item-link">
+          <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1280px-Instagram_logo_2022.svg.png">
+          <span class="text"><b>Instagram</b></span>
+        </a>
 
-      <li style="list-style: none" class="btn" >
-            <img  width="30" height="30" src="https://store-images.s-microsoft.com/image/apps.4784.13634052595610511.c45457c9-b4af-46b0-8e61-8d7c0aec3f56.3d483847-81a6-4078-8f83-a35c5c38ee92">
-            <a href="https://www.tiktok.com/@miettaa_" target="_blank" class="text">Tiktok</a></li>
+        <a href="https://www.tiktok.com/@miettaa_" target="_blank" class="item-link">
+          <img class="logo" src="https://sf-static.tiktokcdn.com/obj/eden-sg/uhtyvueh7nulogpoguhm/tiktok-icon2.png">
+          <span class="text"><b>Tiktok</b></span>
+        </a>
 
-      <li style="list-style: none" class="btn" >
-            <img  width="30" height="30" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8aMugg7LWDXqkWc-9JlApM4MLPXhi-EPDYA&s">
-            <a href="https://discord.gg/bpGbfYggvW" target="_blank" class="text">Discord</a></li>
-
-      <h3>SUPPORT :</h3>
-
-      <li style="list-style: none" class="btn" >
-            <img  width="30" height="30" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8yuCbGNLSs4UawMtig4E9e6y7KuEATrbtkg&s">
-            <a href="https://tako.id/mieta" target="_blank" class="text">Tako</a></li>
-            
+        <a href="https://discord.gg/bpGbfYggvW" target="_blank" class="item-link">
+          <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8aMugg7LWDXqkWc-9JlApM4MLPXhi-EPDYA&s">
+          <span class="text"><b>Discord</b></span>
+        </a>
+      </div>
     </div>
+
+    <h3>SUPPORT :</h3>
+    <div class="sosial1">
+      <a href="https://tako.id/mieta" target="_blank" class="item-link">
+        <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8yuCbGNLSs4UawMtig4E9e6y7KuEATrbtkg&s">
+        <span class="text"><b>Tako</b></span>
+      </a>
+    </div>
+
+    <h3>CONTACT :</h3>
+    <img width="15" height="15" src="https://eventkampus.com/data/artikel/1/1399/foto-pengertian-email.png">
+    <a><u>mieta0001@gmail.com</u></a>
 
     <div class="footer">
-      &copy; 2026 Mieta.
+      © 2026 Mieta.
     </div>
+  </div>
 
 </body>
 
